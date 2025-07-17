@@ -1,0 +1,97 @@
+:root {
+	--white: #ffffff; /* Define a cor branca para uso global */
+	--black: #000000; /* Define a cor preta para uso global */
+	--font_regular: 400; /* Peso padrão da fonte (normal) */
+	--font_bold: 700; /* Peso negrito da fonte */
+}
+
+*,
+*::after,
+*::before {
+	margin: 0; /* Remove todas as margens padrão dos elementos */
+	padding: 0; /* Remove todos os preenchimentos padrão dos elementos */
+	box-sizing: border-box; /* Inclui borda e padding no cálculo do tamanho total */
+	border: none; /* Remove qualquer borda padrão */
+	-webkit-font-smoothing: antialiased; /* Suaviza a renderização das fontes em navegadores Webkit */
+	-moz-osx-font-smoothing: grayscale; /* Suaviza a renderização das fontes no Firefox */
+	vertical-align: baseline; /* Alinha elementos ao baseline do texto */
+}
+
+html {
+	font-size: 62.5%; /* Define o tamanho da fonte padrão para 10px (1rem = 10px) */
+}
+
+body {
+	height: 100vh; /* Faz o body ocupar toda a altura da janela de visualização */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth; /* Ativa rolagem suave se o usuário não preferir redução de movimento */
+	}
+}
+
+body,
+input,
+textarea,
+button {
+	font-size: 1.6rem; /* Define o tamanho da fonte para 16px */
+	color: var(--white); /* Define a cor do texto como branco */
+	font-weight: var(--font_regular); /* Usa o peso de fonte normal */
+}
+
+a,
+ul,
+ol,
+li,
+button {
+	text-decoration: none; /* Remove sublinhado de links */
+	list-style: none; /* Remove marcadores de listas */
+	cursor: pointer; /* Mostra o cursor de ponteiro ao passar por cima */
+	outline: none; /* Remove contorno ao focar */
+	background: none; /* Remove fundo padrão */
+	border: none; /* Remove borda padrão */
+}
+
+a:visited,
+a:active {
+	color: inherit; /* Mantém a cor do link igual ao texto */
+	text-decoration: none; /* Remove sublinhado em links visitados/ativos */
+}
+
+img,
+svg {
+	display: block; /* Faz imagens e SVGs ocuparem uma linha inteira */
+	max-width: 100%; /* Limita largura máxima ao elemento pai */
+}
+
+menu:not(article menu),
+ol:not(article ol),
+ul:not(article ul) {
+	list-style: none; /* Remove marcadores de listas fora de artigos */
+}
+
+menu,
+ol,
+ul {
+	padding-left: 0; /* Remove recuo à esquerda das listas */
+}
+
+article ol,
+article ul {
+	list-style-position: inside; /* Marcadores de listas dentro do artigo ficam dentro do conteúdo */
+}
+
+:focus:not(:focus-visible) {
+	outline: none; /* Remove contorno de foco quando não é visível */
+}
+
+label,
+button,
+select,
+summary,
+[type="radio"],
+[type="submit"],
+[type="checkbox"] {
+	cursor: pointer; /* Mostra cursor de ponteiro para elementos interativos */
+}
