@@ -95,3 +95,12 @@ summary,
 [type="checkbox"] {
 	cursor: pointer; /* Mostra cursor de ponteiro para elementos interativos */
 }
+
+textarea:focus {
+	outline: none;
+	border: 1px solid var(--black);
+}
+
+textarea {
+	resize: none;
+}
