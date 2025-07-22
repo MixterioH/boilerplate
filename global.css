@@ -105,3 +105,9 @@ textarea:focus {
 textarea {
 	resize: none;
 }
+
+pre {
+	white-space: pre-wrap;
+	font-family: inherit;
+	word-wrap: break-word;
+}
